@@ -136,10 +136,7 @@ module.exports = {
               formatter: eslintFormatter,
               // @remove-on-eject-begin
               baseConfig: {
-                extends: [
-                  require.resolve('eslint-config-react-app'),
-                  require.resolve('eslint-config-valtech')
-                ],
+                extends: [require.resolve('./eslintrc')],
               },
               ignore: false,
               useEslintrc: true,
