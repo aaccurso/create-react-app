@@ -160,7 +160,7 @@ module.exports = {
         exclude: [
           /\.html$/,
           /\.(js|jsx)$/,
-          /\.css$/,
+          /\.(css|scss)$/,
           /\.json$/,
           /\.bmp$/,
           /\.gif$/,
@@ -200,19 +200,27 @@ module.exports = {
         },
       },
       // "postcss" loader applies autoprefixer to our CSS.
+      // "sass" loader compiles SASS files to CSS.
       // "css" loader resolves paths in CSS and adds assets as dependencies.
       // "style" loader turns CSS into JS modules that inject <style> tags.
       // In production, we use a plugin to extract that CSS to a file, but
       // in development "style" loader enables hot editing of CSS.
       {
-        test: /\.css$/,
+        test: /\.(css|scss)/,
         use: [
           require.resolve('style-loader'),
           {
             loader: require.resolve('css-loader'),
             options: {
               importLoaders: 1,
-            },
+              sourceMap: true
+            }
+          },
+          {
+            loader: require.resolve('sass-loader'),
+            options: {
+              sourceMap: true
+            }
           },
           {
             loader: require.resolve('postcss-loader'),
