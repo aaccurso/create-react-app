@@ -1,6 +1,6 @@
 {
   "name": "aaccurso-react-scripts",
-  "version": "1.0.6-fork.1",
+  "version": "1.0.7-fork.0",
   "description": "Configuration and scripts for Create React App.",
   "repository": "facebookincubator/create-react-app",
   "license": "BSD-3-Clause",
@@ -50,13 +50,18 @@
     "postcss-flexbugs-fixes": "3.0.0",
     "postcss-loader": "2.0.5",
     "promise": "7.1.1",
+<<<<<<< HEAD
     "react-dev-utils": "^2.0.1",
     "react-error-overlay": "^1.0.6",
     "sass-loader": "^6.0.5",
+=======
+    "react-dev-utils": "^3.0.0",
+    "react-error-overlay": "^1.0.7",
+>>>>>>> 3f342383c3fd6a39058d82e599a523103cff7fbc
     "style-loader": "0.17.0",
     "sw-precache-webpack-plugin": "0.9.1",
     "url-loader": "0.5.8",
-    "webpack": "2.5.1",
+    "webpack": "2.6.1",
     "webpack-dev-server": "2.4.5",
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.3"
