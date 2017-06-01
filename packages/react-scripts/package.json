@@ -20,6 +20,9 @@
   "bin": {
     "react-scripts": "./bin/react-scripts.js"
   },
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish"
+  },
   "dependencies": {
     "autoprefixer": "7.1.0",
     "babel-core": "6.24.1",
