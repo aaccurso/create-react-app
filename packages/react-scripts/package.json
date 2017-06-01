@@ -21,7 +21,7 @@
     "react-scripts": "./bin/react-scripts.js"
   },
   "scripts": {
-    "postversion": "git push && git push --tags && npm publish"
+    "postpublish": "git push && git push --tags"
   },
   "dependencies": {
     "autoprefixer": "7.1.0",
