@@ -1,8 +1,5 @@
 'use strict';
 
 module.exports = {
-  extends: [
-    'react-app',
-    'valtech'
-  ]
+  extends: ['react-app']
 };

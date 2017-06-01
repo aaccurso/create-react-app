@@ -140,7 +140,7 @@ module.exports = {
                 extends: [require.resolve('./eslintrc')],
               },
               ignore: false,
-              useEslintrc: true,
+              useEslintrc: false,
               // @remove-on-eject-end
             },
             loader: require.resolve('eslint-loader'),
